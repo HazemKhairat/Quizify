@@ -1,0 +1,92 @@
+<div class="registration-container">
+  <!-- Left section -->
+  <div class="registration-left">
+    <img src="{{assets}}/images/SignUp.png" alt="Sign up illustration" />
+  </div>
+
+  <!-- Right section -->
+  <div class="registration-right">
+    <div class="registration-form-wrapper">
+      <h2 class="registration-title ">Get Started Now</h2>
+      <p class="registration-subtitle ">Let's create your account</p>
+
+      <form [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
+
+        <!-- Full Name -->
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <div class="input-wrapper">
+            <img src="{{assets}}/icons/person-outline.svg" alt="person icon" class="input-icon">
+            <input id="name" formControlName="name" placeholder="Name" class="registration-input" />
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+          <label for="email">Email</label>
+          <div class="input-wrapper">
+            <img src="{{assets}}/icons/email-outline.svg" alt="email icon" class="input-icon">
+            <input id="email" formControlName="email" type="email" placeholder="Email" class="registration-input" />
+          </div>
+        </div>
+
+        <!-- Password -->
+        <div class="form-group">
+          <label for="password">Password</label>
+          <div class="input-wrapper">
+            <img src="{{assets}}/icons/lock-outline.svg" alt="lock icon" class="input-icon">
+            <input id="password" formControlName="password" type="password" placeholder="Password" class="registration-input" />
+            <img src="{{assets}}/icons/eye-off-outline.svg" alt="toggle password" class="toggle-password">
+          </div>
+        </div>
+
+        <!-- Confirm Password -->
+        <div class="form-group">
+          <label for="password_confirmation">Confirm Password</label>
+          <div class="input-wrapper">
+            <img src="{{assets}}/icons/lock-outline.svg" alt="lock icon" class="input-icon">
+            <input id="password_confirmation" formControlName="password_confirmation" type="password" placeholder="Confirm Password" class="registration-input" />
+            <img src="{{assets}}/icons/eye-off-outline.svg" alt="toggle password" class="toggle-password">
+          </div>
+        </div>
+
+        <!-- Role -->
+        <div class="form-group">
+          <label for="role">Select Role</label>
+          <select id="role" formControlName="role" class="registration-input">
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+          </select>
+        </div>
+
+        <!-- Terms and Conditions -->
+        <div class="registration-terms">
+          <input type="checkbox" id="terms">
+          <label for="terms">
+            I agree to the <a href="#">Terms & Conditions</a>  
+          </label>
+        </div>
+
+        <!-- Primary button -->
+        <button type="submit" class="registration-btn-primary mt-3">Sign up</button>
+
+        <!-- Divider -->
+        <div class="registration-divider">
+          <span class="registration-divider-line"></span>
+          <span class="registration-divider-text">or</span>
+          <span class="registration-divider-line"></span>
+        </div>
+
+        <!-- Google Button -->
+        <button type="button" class="registration-btn-secondary">
+          <img src="{{assets}}/icons/google.svg" alt="Google icon" class="google-icon">
+          Sign up with Google
+        </button>
+      </form>
+
+      <!-- <p class="registration-subtitle text-center mt-3">
+        Already have an account? <a routerLink="/login">Sign in</a>
+      </p> -->
+    </div>
+  </div>
+</div>

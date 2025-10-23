@@ -1,0 +1,202 @@
+/* ===== Layout ===== */
+.registration-container {
+  display: flex;
+  height: 100vh;
+  background-color: #fff;
+}
+
+/* ===== Left Section ===== */
+.registration-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../../../../assets/images/background.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.registration-left img {
+  width: 80%;
+  max-width: 450px;
+}
+
+/* ===== Right Section ===== */
+.registration-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.registration-form-wrapper {
+  width: 450px;
+  background: #fff;
+  padding: 20px 10px; 
+  border-radius: 12px;
+}
+
+/* ===== Titles ===== */
+.registration-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  color: #2E3139;
+  margin-bottom: 5px;
+}
+
+.registration-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #425583;
+  margin-bottom: 20px;
+}
+
+/* ===== Form Elements ===== */
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #2E3139;
+  margin-bottom: 6px;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-icon {
+  position: absolute;
+  left: 14px;
+  width: 18px;
+  height: 18px;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 14px;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.registration-input {
+  width: 100%;
+  height: 44px;
+  padding: 3px 40px;
+  border: 1px solid #D3E0FE;
+  border-radius: 100px;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  outline: none;
+  transition: 0.2s;
+}
+
+.registration-input:focus {
+  border-color: #258378;
+  box-shadow: 0 0 4px rgba(37, 131, 120, 0.3);
+}
+
+/* ===== Buttons ===== */
+.registration-btn-primary {
+  width: 100%;
+  height: 48px;
+  background-color: #258378;
+  border: none;
+  border-radius: 100px;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.registration-btn-primary:hover {
+  background-color: #1f6f65;
+}
+
+.registration-btn-secondary {
+  width: 100%;
+  height: 48px;
+  background: #ffffff;
+  border: 1px solid #D3E0FE;
+  border-radius: 100px;
+  color: #2E3139;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.registration-btn-secondary:hover {
+  background: #f6f9ff;
+  border-color: #258378;
+}
+
+.google-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* ===== Divider ===== */
+.registration-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  margin: 15px 0;
+}
+
+.registration-divider-line {
+  flex-grow: 1;
+  border-top: 1px solid #D3E0FE;
+}
+
+.registration-divider-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #425583;
+}
+
+/* ===== Terms and Conditions ===== */
+.registration-terms {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #2E3139;
+  margin: 8px 0 4px 0;
+}
+
+.registration-terms input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #258378;
+  cursor: pointer;
+}
+
+.registration-terms a {
+  color: #4045EF;
+  text-decoration: none;
+}
+
+.registration-terms a:hover {
+  text-decoration: underline;
+}
+
