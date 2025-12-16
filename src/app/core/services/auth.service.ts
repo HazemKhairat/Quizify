@@ -20,4 +20,29 @@ export class AuthService {
   }
 
 
+  verifyRegisterOtp(body: { email: string; code: string }) {
+    return this.http.post<any>(`${environment.API_URL}/verify-otp-register`, body);
+  }
+
+  resendEmail(email: string){
+    return this.http.post<any>(`${environment.API_URL}/resend code`, {email});
+  }
+
+  forgotPassword(email: string){
+    return this.http.post<any>(`${environment.API_URL}/forget-password-otp`, {email});
+  }
+
+  verifyPasswordOtp(email: string, code: string){
+    return this.http.post<any>(`${environment.API_URL}/verify-password-otp`, {email, code});
+  }
+
+  ResetPassword(email: string, password: string, password_confirmation: string){
+    return this.http.post<any>(`${environment.API_URL}/reset-Password`, {email, password, password_confirmation});
+  }
+
+  logOut(){
+    localStorage.removeItem('accessToken');
+  }
+
+
 }

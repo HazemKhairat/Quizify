@@ -7,8 +7,13 @@ import { AppComponent } from './app.component';
 import { RegisterComponent } from './components/auth/register/register.component';
 import { LoginComponent } from './components/auth/login/login.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ReactiveFormsModule } from '@angular/forms';
-import { HomeComponent } from './components/features/home/home.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HomeComponent } from './components/instructor/home/home.component';
+import { OtpCodeComponent } from './components/auth/otp-code/otp-code.component';
+import { ForgotPasswordComponent } from './components/auth/forgot-password/forgot-password.component';
+import { SetNewPasswordComponent } from './components/auth/set-new-password/set-new-password.component';
+import { PasswordChangedComponent } from './components/auth/password-changed/password-changed.component';
+import { RegistrationSuccessComponent } from './components/auth/registration-success/registration-success.component';
 
 @NgModule({
   declarations: [
@@ -16,10 +21,16 @@ import { HomeComponent } from './components/features/home/home.component';
     RegisterComponent,
     LoginComponent,
     HomeComponent,
+    OtpCodeComponent,
+    ForgotPasswordComponent,
+    SetNewPasswordComponent,
+    PasswordChangedComponent,
+    RegistrationSuccessComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,

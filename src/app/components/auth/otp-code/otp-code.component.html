@@ -1,0 +1,48 @@
+<div class="verification-container">
+    <!-- Left section -->
+    <div class="verification-left">
+        <img src="../../../../assets/images/Verefication 1.png" alt="Verification Illustration" class="overlay-image">
+    </div>
+
+    <!-- Right section -->
+    <div class="verification-right">
+        <div class="content">
+            <img src="../../../../assets/icons/Icon.svg" alt="Verification Icon" class="icon">
+            <h1>OTP Verification</h1>
+            <p>Check your email to see the verification code</p>
+
+            <!-- OTP inputs -->
+            <div class="digits">
+                <input #otpInput type="text" maxlength="1" class="otp" (input)="onInput($event, 0)"
+                    (keydown)="onKeyDown($event, 0)" (paste)="onPaste($event)" />
+                <input #otpInput type="text" maxlength="1" class="otp" (input)="onInput($event, 1)"
+                    (keydown)="onKeyDown($event, 1)" (paste)="onPaste($event)" />
+                <input #otpInput type="text" maxlength="1" class="otp" (input)="onInput($event, 2)"
+                    (keydown)="onKeyDown($event, 2)" (paste)="onPaste($event)" />
+                <input #otpInput type="text" maxlength="1" class="otp" (input)="onInput($event, 3)"
+                    (keydown)="onKeyDown($event, 3)" (paste)="onPaste($event)" />
+                <input #otpInput type="text" maxlength="1" class="otp" (input)="onInput($event, 4)"
+                    (keydown)="onKeyDown($event, 4)" (paste)="onPaste($event)" />
+                <input #otpInput type="text" maxlength="1" class="otp" (input)="onInput($event, 5)"
+                    (keydown)="onKeyDown($event, 5)" (paste)="onPaste($event)" />
+            </div>
+
+            <button class="verifi-btn" type="button" (click)="verifyOtp()">Verify</button>
+
+            <p class="resend">
+                
+            @if(!canResend){
+                Resend Code in <span>00:{{timer > 9 ? timer : '0'+ timer}}</span>
+            
+            } @else{
+            Didn't receive the code? 
+            <button class="resend-btn" (click)="resend()">
+                Resend Code
+            </button>
+            }
+            </p>
+
+
+        </div>
+    </div>
+</div>

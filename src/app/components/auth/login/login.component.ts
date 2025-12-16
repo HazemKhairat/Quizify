@@ -12,11 +12,18 @@ import { Router } from '@angular/router';
 export class LoginComponent {
   constructor(private auth_service: AuthService, private form_builder: FormBuilder, private toastr: ToastrService, private router: Router) { }
   assets: string = environment.ASSETS
+  showPassword = false;
+
 
   loginForm: FormGroup = this.form_builder.group({
     email: ['', [Validators.required, Validators.email]],
     password: ['', [Validators.required, Validators.minLength(10)]],
   });
+
+  togglePassword() {
+    this.showPassword = !this.showPassword;
+  }
+
 
 
   onSubmit() {
