@@ -1,0 +1,168 @@
+.login-container {
+  display: flex;
+  height: 100vh;
+  font-family: var(--font-main);
+}
+
+/* Left side */
+.left-side {
+  flex: 1;
+  background-image: url(../../../../assets/images/background.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-side img {
+  width: 80%;
+  max-width: 500px;
+  border-radius: 20px;
+}
+
+/* Right side */
+.right-side {
+  flex: 1;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  width: 100%;
+  max-width: 450px;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 32px;
+  color: #2e3139;
+  margin-bottom: 8px;
+}
+
+p {
+  color: #425583;
+  margin-bottom: 30px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  width: 100%;
+  display: block;
+}
+
+label {
+  font-size: 13px;
+  color: #2e3139;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  border: 1px solid #d3e0fe;
+  border-radius: 100px;
+  padding: 10px 16px;
+  gap: 10px;
+}
+
+.input-wrapper img {
+  width: 18px;
+  height: 18px;
+}
+
+.input-wrapper input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 14px;
+  color: #2e3139;
+}
+
+/* Options */
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+
+.options a {
+  color: #4045ef;
+  text-decoration: none;
+}
+
+/* Buttons */
+.btn-primary {
+  width: 100%;
+  padding: 12px;
+  background: #258378;
+  color: #fff;
+  border: none;
+  border-radius: 100px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: #1f6f66;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #d3e0fe;
+}
+
+.divider span {
+  margin: 0 10px;
+  color: #425583;
+}
+
+/* Google Button */
+.btn-outline {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #258378;
+  border-radius: 100px;
+  background: transparent;
+  color: #258378;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-outline:hover {
+  background: #e7f5f4;
+}
+
+/* Signup text */
+.signup-text {
+  text-align: center;
+  margin-top: 20px;
+  color: #425583;
+  font-size: 14px;
+}
+
+.signup-text a {
+  color: #4045ef;
+  text-decoration: none;
+  font-weight: 500;
+}

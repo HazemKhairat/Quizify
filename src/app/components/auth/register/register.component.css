@@ -33,13 +33,13 @@
 .registration-form-wrapper {
   width: 450px;
   background: #fff;
-  padding: 20px 10px; 
+  padding: 20px 10px;
   border-radius: 12px;
 }
 
 /* ===== Titles ===== */
 .registration-title {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-main);
   font-weight: 600;
   font-size: 36px;
   color: #2E3139;
@@ -47,7 +47,7 @@
 }
 
 .registration-subtitle {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-main);
   font-size: 14px;
   color: #425583;
   margin-bottom: 20px;
@@ -94,13 +94,13 @@ label {
   border: 1px solid #D3E0FE;
   border-radius: 100px;
   font-size: 14px;
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-main);
   outline: none;
   transition: 0.2s;
 }
 
 .registration-input:focus {
-  border-color: #258378;
+  border-color: var(--color-primary);
   box-shadow: 0 0 4px rgba(37, 131, 120, 0.3);
 }
 
@@ -108,15 +108,15 @@ label {
 .registration-btn-primary {
   width: 100%;
   height: 48px;
-  background-color: #258378;
+  background-color: var(--color-primary);
   border: none;
   border-radius: 100px;
   color: white;
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-main);
   font-weight: 600;
   font-size: 15px;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: 0.3s;
 }
 
 .registration-btn-primary:hover {
@@ -130,7 +130,7 @@ label {
   border: 1px solid #D3E0FE;
   border-radius: 100px;
   color: #2E3139;
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-main);
   font-weight: 500;
   font-size: 14px;
   display: flex;
@@ -143,7 +143,7 @@ label {
 
 .registration-btn-secondary:hover {
   background: #f6f9ff;
-  border-color: #258378;
+  border-color: var(--color-primary);
 }
 
 .google-icon {
@@ -167,7 +167,7 @@ label {
 }
 
 .registration-divider-text {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-main);
   font-size: 14px;
   color: #425583;
 }
@@ -178,7 +178,7 @@ label {
   align-items: center;
   gap: 8px;
   width: 100%;
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-main);
   font-size: 14px;
   color: #2E3139;
   margin: 8px 0 4px 0;
@@ -187,7 +187,7 @@ label {
 .registration-terms input[type="checkbox"] {
   width: 16px;
   height: 16px;
-  accent-color: #258378;
+  accent-color: var(--color-primary);
   cursor: pointer;
 }
 
@@ -199,4 +199,3 @@ label {
 .registration-terms a:hover {
   text-decoration: underline;
 }
-
